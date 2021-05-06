@@ -219,6 +219,12 @@ a:focus {
   }
 }
 
+/* color modifiers*/
+
+.o-row--neutral-xxxx-light{
+  background: #fff;
+}
+
 /*
     Objects: Container
     ---
@@ -402,7 +408,6 @@ a:focus {
 }
 
 .c-nav__item{
-    
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 8px;
@@ -452,7 +457,7 @@ a:focus {
     line-height: 24px;
     font-weight: 600;
     padding: 19px 32px;
-    transition-duration: 2.25s;
+    transition-duration: .25s;
     transition-timing-function: ease-in-out;
     background: linear-gradient(to right,  #033aa7 0%, #0053fb 51%, #033aa7 100%);
     background-size: 200% auto;
@@ -469,6 +474,34 @@ a:focus {
     color: #fff;
     background-position: right center;
     box-shadow: inset 0 0 0 1px rgba(142, 199, 255, .4), 0 0 10px rgba(17, 149, 255, .8);
+}
+
+.c-figure{
+  position: relative;
+}
+
+/*kotje zelf*/
+.c-figure__caption{
+  line-height: 15px;
+  margin-top: 8px;
+  padding-left: 6px;
+  padding-top: 1px;
+  border: 2px solid #0053fb;
+  border-width: 0 0 0 2px;
+  color: #474d59;
+}
+
+/*plaatsen van kotje in rechter bovenhoek*/
+.c-figure__caption--absolute{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 8px;
+  text-align: right;
+  background-color: #fff;
+  padding: 16px;
+  max-width: 260px;
+  border-width: 0 4px 0 0;
 }
 
 /*------------------------------------*\
